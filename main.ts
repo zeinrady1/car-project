@@ -10,8 +10,11 @@ radio.onReceivedValue(function (name, value) {
     }
     if (0 == y) {
         jy = value
-        if (name == "x") {
-        	
+        if (name == "y") {
+            jy = value
+            if (jy > 500 && jy < 525) {
+            	
+            }
         }
     }
     serial.writeValue(name, value)
